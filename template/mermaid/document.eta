@@ -1,0 +1,10 @@
+%%{init: {'theme':'<%= it.option.theme %>'}}%%
+
+erDiagram
+
+<% it.entities.forEach((entity) => { -%>
+<%~ include('mermaid/entity', { entity }) %>
+<% -%>
+<%~ include('mermaid/relation', { entity }) %>
+
+<% }) -%>

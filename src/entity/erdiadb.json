@@ -1,0 +1,83 @@
+[
+  {
+    "$kind": "entity",
+    "name": "User",
+    "version": "0.0.1",
+    "createdAt": "2024-03-31T17:51:45-07:00",
+    "updatedAt": "2024-03-31T17:51:45-07:00",
+    "change": "none",
+    "entity": "user",
+    "dbName": "user",
+    "hasRelation": false
+  },
+  {
+    "$kind": "column",
+    "name": "id",
+    "version": "0.0.1",
+    "createdAt": "2024-03-31T17:51:45-07:00",
+    "updatedAt": "2024-03-31T17:51:45-07:00",
+    "change": "none",
+    "entity": "user",
+    "dbName": "id",
+    "attributeKey": [
+      "PK"
+    ],
+    "isNullable": "",
+    "columnType": "*number",
+    "charset": "",
+    "columnTypeWithLength": "*number",
+    "comment": "",
+    "weight": 20691017.22
+  },
+  {
+    "$kind": "column",
+    "name": "firstName",
+    "version": "0.0.1",
+    "createdAt": "2024-03-31T17:51:45-07:00",
+    "updatedAt": "2024-03-31T17:51:45-07:00",
+    "change": "none",
+    "entity": "user",
+    "dbName": "firstName",
+    "attributeKey": [],
+    "isNullable": "",
+    "columnType": "*string",
+    "charset": "",
+    "columnTypeWithLength": "*string",
+    "comment": "",
+    "weight": 705020.17
+  },
+  {
+    "$kind": "column",
+    "name": "lastName",
+    "version": "0.0.1",
+    "createdAt": "2024-03-31T17:51:45-07:00",
+    "updatedAt": "2024-03-31T17:51:45-07:00",
+    "change": "none",
+    "entity": "user",
+    "dbName": "lastName",
+    "attributeKey": [],
+    "isNullable": "",
+    "columnType": "*string",
+    "charset": "",
+    "columnTypeWithLength": "*string",
+    "comment": "",
+    "weight": 705014.25
+  },
+  {
+    "$kind": "column",
+    "name": "age",
+    "version": "0.0.1",
+    "createdAt": "2024-03-31T17:51:45-07:00",
+    "updatedAt": "2024-03-31T17:51:45-07:00",
+    "change": "none",
+    "entity": "user",
+    "dbName": "age",
+    "attributeKey": [],
+    "isNullable": "",
+    "columnType": "*number",
+    "charset": "",
+    "columnTypeWithLength": "*number",
+    "comment": "",
+    "weight": 691025.19
+  }
+]

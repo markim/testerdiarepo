@@ -1,0 +1,14 @@
+This should exist in `erdiaoutput/test.md` after build
+
+# <%= it.metadata.name %>
+
+<% it.versions.filter((version) => version.latest).forEach((version) => { %>
+<% if (it.option.components.includes('table')) { %>
+<%~ include('markdown/toc', { entities: version.entities, option: it.option, metadata: it.metadata }); %>
+<%~ include('markdown/table', { entities: version.entities, option: it.option, metadata: it.metadata }); %>
+<% } %>
+
+<% if (it.option.components.includes('er')) { %>
+<%~ include('markdown/mermaid', { entities: version.entities, option: it.option, metadata: it.metadata }); %>
+<% } %>
+<% }) %>
