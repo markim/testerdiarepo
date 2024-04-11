@@ -18,7 +18,7 @@
       "typeorm": "0.3.20"
    },
    "scripts": {
-      "erdia": "TS_NODE_PROJECT='./tsconfig.json' ts-node -r tsconfig-paths/register ./node_modules/.bin/erdia build -c .erdiarc",
+      "erdia": "TS_NODE_PROJECT='./tsconfig.json' ts-node ./node_modules/erdia/dist/cjs/cli.cjs build -c .erdiarc",
       "start": "ts-node src/index.ts",
       "typeorm": "typeorm-ts-node-commonjs"
    }
