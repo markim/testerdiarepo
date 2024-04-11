@@ -1,4 +1,25 @@
-<% it.entity.relations.forEach((relation) => { %>
+%%{init: {'theme':'<%= it.option.theme %>'}}%%
+
+erDiagram
+
+<% it.entities.forEach((entity) => { -%>
+
+"<%= entity.dbName %>(<%= entity.name %>)" {
+<% entity.columns.forEach((column) => { %>
+  <%= column.columnTypeWithLength %> <%= column.name -%>
+  <% if (column.attributeKey != null && column.attributeKey.length > 0) { %>
+  <%= column.attributeKey.join(',') -%>
+  <% } %>
+  <% if (column.comment != null && column.comment != '') { %>
+  "<%= column.comment -%>"<% -%>
+  <% } %>
+
+<% }) %>
+}
+
+<% -%>
+
+<% entity.relations.forEach((relation) => { %>
 <% if (relation.isDuplicate) { return; } %>
 "<%= relation.dbName %>(<%= relation.name %>)"<% -%>
 <% if (relation.joinColumnOne && relation.joinColumnNullable) { %>
@@ -24,3 +45,5 @@ o{  <% -%>
 "<%= [relation.joinColumnName,relation.inverseJoinColumnName].filter((name) => name != null).sort().join(',') %>"<% -%>
 
 <% }) %>
+
+<% }) -%>

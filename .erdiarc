@@ -1,9 +1,9 @@
 {
   // directory for output files
-  "output": "erdiaoutput",
+  "output": "/Users/mark/code/testerdiarepo/erdiaoutput",
 
   // typeorm dataSourcePath
-  "data-source-path": "src/data-source.ts",
+  "data-source-path": "/Users/mark/code/testerdiarepo/src/data-source.ts",
 
   // type of generated document
   "components": ["table", "er"],
@@ -14,10 +14,10 @@
   "project-name": "db",
 
   // custom template file path. erdia are using [ETA](https://eta.js.org/) template engine
-  "template-path": "template",
+  "template-path": "",
 
   // erdia entity database file path
-  "database-path": "src/entity",
+  "database-path": "/Users/mark/code/testerdiarepo/src/entity",
 
   // erdia entity database file path
   // "route-base-path": "",
@@ -26,7 +26,7 @@
   "version-from": "package.json",
 
   // If the versionFrom option set file, read the file from this path
-  "version-path": "undefined",
+  // "version-path": "",
 
   // output format of generated documents
   // - html

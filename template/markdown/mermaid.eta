@@ -1,5 +1,0 @@
-## ER Diagram
-
-```mermaid
-<%~ include('mermaid/document', { entities: it.entities, option: it.option, metadata: it.metadata }); -%>
-```
